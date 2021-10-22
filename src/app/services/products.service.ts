@@ -9,9 +9,9 @@ export class ProductsService {
 
   constructor(private http: HttpClient) { }
 
-  // getAllProducts() {
-  //   return this.http.get(`${environment.baseURL}/items`);
-  // }
+  getAllProducts() {
+    return this.http.get(`${environment.baseURL}/items`);
+  }
   // addToCart(payload:any) {
   //   return this.http.post(`${environment.baseURL}/items`, payload);
   // }
