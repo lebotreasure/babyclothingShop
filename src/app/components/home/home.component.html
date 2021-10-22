@@ -1,20 +1,74 @@
-<div class="container">
-  <mdb-card style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/gradient1.jpg');">
-    <div class="text-white text-center py-5 px-4 my-5">
-      <div>
-        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Create your web with Dylut2000 MDBootstrap</strong></h2>
-        <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam,
-          voluptatem,
-          optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui,
-          dolorum!
-        </p>
-        <h5>Check the README.md file, you might find some few links that might helps</h5>
-        <a mdbBtn color="white" outline="true" class="mt-5 waves-light animate__animated animate__fadeInDown animate__infinite" mdbWavesEffect>
-          <mdb-icon fas icon="clone" class="left"></mdb-icon>View project
-        </a>
-      </div>
+<!-- <div class="row">
+  <div class="col-md-4" *ngFor="let product of products">
+    <mdb-card> -->
+      <!--Card image-->
+      <!-- <mdb-card-img
+        src="https://canary.contestimg.wish.com/api/webimage/5bac691d952d112904c3e524-large.jpg"
+        alt="products"
+        class="img-fluid"
+      ></mdb-card-img> -->
+      <!--Card content-->
+      <!-- <mdb-card-body> -->
+        <!--Title-->
+        <!-- <mdb-card-title>
+          <h4>Red dress</h4>
+        </mdb-card-title> -->
+
+        <!--Text-->
+        <!-- <mdb-card-text>R 129.99 </mdb-card-text> -->
+
+        <!-- <button
+          class="btn btn-md btn-info"
+          (click)="_addItemToCart(product._id, 1)"
+        >
+          Add to cart
+        </button> -->
+      <!-- </mdb-card-body>
+    </mdb-card>
+  </div>
+</div> -->
+
+<div class="card mb-3">
+  <h3 class="card-header">Dresses</h3>
+  <button class="category" [routerLink]="['/dresses']" routerLinkActive="router-link-active" >
+    <div class="image">
+      <img src="assets/dresses.jpg">
     </div>
-  </mdb-card>
+  </button>
+</div>
 
+<div class="card mb-3">
+  <h3 class="card-header">Sets</h3>
+  <button class="category" [routerLink]="['/sets']" routerLinkActive="router-link-active" >
+  <div class="image">
+    <img src="assets/sets.jpeg">
+  </div>
+</button>
+</div>
 
+<div class="card mb-3">
+  <h3 class="card-header">Shoes</h3>
+  <button class="category" [routerLink]="['/shoes']" routerLinkActive="router-link-active" >
+  <div class="image">
+    <img src="assets/shoes.jpg">
+  </div>
+</button>
+</div>
+
+<div class="card mb-3">
+  <h3 class="card-header">Leggings</h3>
+  <button class="category" [routerLink]="['/leggings']" routerLinkActive="router-link-active" >
+  <div class="image">
+    <img src="assets/leggings.jpeg">
+  </div>
+</button>
+</div>
+
+<div class="card mb-3">
+  <h3 class="card-header">Accessories</h3>
+  <button class="category" [routerLink]="['/accessory']" routerLinkActive="router-link-active" >
+  <div class="image">
+    <img src="assets/accessories.jpeg">
+  </div>
+</button>
 </div>
