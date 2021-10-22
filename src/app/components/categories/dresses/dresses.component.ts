@@ -14,7 +14,7 @@ export class DressesComponent implements OnInit {
   getProducts(): void {
     this.http.getAllProducts().subscribe((data: any) => {
       this.products = data;
-      console.log(this.products);
+      // console.log(this.products);
     });
   }
 
