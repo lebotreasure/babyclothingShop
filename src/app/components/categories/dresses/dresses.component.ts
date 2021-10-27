@@ -10,11 +10,22 @@ export class DressesComponent implements OnInit {
 
   products: Array<object> = [];
   
-  constructor(private http: ProductsService) {}
+  constructor(private productsService: ProductsService) {}
   getProducts(): void {
-    this.http.getAllProducts().subscribe((data: any) => {
+    this.productsService.getAllProducts().subscribe((data: any) => {
       this.products = data;
       // console.log(this.products);
+    });
+  }
+
+  addItemToCart(id:any, quantity:any): void {
+    let payload = {
+      productId: id,
+      quantity,
+    };
+    this.productsService.addToCart(payload).subscribe(() => {
+      this.getProducts();
+      alert('Product Added');
     });
   }
 

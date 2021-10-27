@@ -12,17 +12,17 @@ export class ProductsService {
   getAllProducts() {
     return this.http.get(`${environment.baseURL}/items`);
   }
-  // addToCart(payload:any) {
-  //   return this.http.post(`${environment.baseURL}/items`, payload);
-  // }
-  // getCartItems() {
-  //   return this.http.get(`${environment.baseURL}/items`);
-  // }
-  // increaseQty(payload:any) {
-  //   return this.http.post(`${environment.baseURL}/items`, payload);
-  // }
-  // emptyCart() {
-  //   return this.http.delete(`${environment.baseURL}/items/empty-cart`);
-  // }
+  addToCart(payload:any) {
+    return this.http.post(`${environment.baseURL}/cart`, payload);
+  }
+  getCartItems() {
+    return this.http.get(`${environment.baseURL}/cart`);
+  }
+  increaseQty(payload:any) {
+    return this.http.patch(`${environment.baseURL}/cart/id`, payload);
+  }
+  emptyCart() {
+    return this.http.delete(`${environment.baseURL}/cart/id`);
+  }
 
 }

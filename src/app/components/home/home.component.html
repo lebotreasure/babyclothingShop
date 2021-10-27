@@ -1,74 +1,69 @@
-<!-- <div class="row">
-  <div class="col-md-4" *ngFor="let product of products">
-    <mdb-card> -->
-      <!--Card image-->
-      <!-- <mdb-card-img
-        src="https://canary.contestimg.wish.com/api/webimage/5bac691d952d112904c3e524-large.jpg"
-        alt="products"
-        class="img-fluid"
-      ></mdb-card-img> -->
-      <!--Card content-->
-      <!-- <mdb-card-body> -->
-        <!--Title-->
-        <!-- <mdb-card-title>
-          <h4>Red dress</h4>
-        </mdb-card-title> -->
+<app-navbar></app-navbar>
 
-        <!--Text-->
-        <!-- <mdb-card-text>R 129.99 </mdb-card-text> -->
 
-        <!-- <button
-          class="btn btn-md btn-info"
-          (click)="_addItemToCart(product._id, 1)"
-        >
-          Add to cart
-        </button> -->
-      <!-- </mdb-card-body>
-    </mdb-card>
+<div class="row">
+  <div class="card mb-3">
+    <h3 class="card-header">Dresses</h3>
+    <button
+      class="category"
+      [routerLink]="['/dresses']"
+      routerLinkActive="router-link-active"
+    >
+      <div class="image">
+        <img src="assets/dresses.jpg" />
+      </div>
+    </button>
   </div>
-</div> -->
 
-<div class="card mb-3">
-  <h3 class="card-header">Dresses</h3>
-  <button class="category" [routerLink]="['/dresses']" routerLinkActive="router-link-active" >
-    <div class="image">
-      <img src="assets/dresses.jpg">
-    </div>
-  </button>
-</div>
-
-<div class="card mb-3">
-  <h3 class="card-header">Sets</h3>
-  <button class="category" [routerLink]="['/sets']" routerLinkActive="router-link-active" >
-  <div class="image">
-    <img src="assets/sets.jpeg">
+  <div class="card mb-3">
+    <h3 class="card-header">Sets</h3>
+    <button
+      class="category"
+      [routerLink]="['/sets']"
+      routerLinkActive="router-link-active"
+    >
+      <div class="image">
+        <img src="assets/sets.jpeg" />
+      </div>
+    </button>
   </div>
-</button>
-</div>
 
-<div class="card mb-3">
-  <h3 class="card-header">Shoes</h3>
-  <button class="category" [routerLink]="['/shoes']" routerLinkActive="router-link-active" >
-  <div class="image">
-    <img src="assets/shoes.jpg">
+  <div class="card mb-3">
+    <h3 class="card-header">Shoes</h3>
+    <button
+      class="category"
+      [routerLink]="['/shoes']"
+      routerLinkActive="router-link-active"
+    >
+      <div class="image">
+        <img src="assets/shoes.jpg" />
+      </div>
+    </button>
   </div>
-</button>
-</div>
 
-<div class="card mb-3">
-  <h3 class="card-header">Leggings</h3>
-  <button class="category" [routerLink]="['/leggings']" routerLinkActive="router-link-active" >
-  <div class="image">
-    <img src="assets/leggings.jpeg">
+  <div class="card mb-3">
+    <h3 class="card-header">Leggings</h3>
+    <button
+      class="category"
+      [routerLink]="['/leggings']"
+      routerLinkActive="router-link-active"
+    >
+      <div class="image">
+        <img src="assets/leggings.jpeg" />
+      </div>
+    </button>
   </div>
-</button>
-</div>
 
-<div class="card mb-3">
-  <h3 class="card-header">Accessories</h3>
-  <button class="category" [routerLink]="['/accessory']" routerLinkActive="router-link-active" >
-  <div class="image">
-    <img src="assets/accessories.jpeg">
+  <div class="card mb-3">
+    <h3 class="card-header">Accessories</h3>
+    <button
+      class="category"
+      [routerLink]="['/accessory']"
+      routerLinkActive="router-link-active"
+    >
+      <div class="image">
+        <img src="assets/accessories.jpeg" />
+      </div>
+    </button>
   </div>
-</button>
 </div>

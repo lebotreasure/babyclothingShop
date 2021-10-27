@@ -17,7 +17,7 @@ export class RegisterComponent implements OnInit {
   loading = false;
   submitted = false;
   nrSelect: boolean = false;
-  private currentUserSubject: BehaviorSubject<User>;
+  currentUserSubject: BehaviorSubject<User>;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -38,7 +38,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
       username: ['', Validators.required],
-      email: ['', Validators.required],
+      // email: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', [Validators.required, Validators.minLength(6)]]
     });

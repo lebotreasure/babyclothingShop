@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CartComponent } from './components/cart/cart.component';
 import { AccessoryComponent } from './components/categories/accessory/accessory.component';
 import { DressesComponent } from './components/categories/dresses/dresses.component';
 import { LeggingsComponent } from './components/categories/leggings/leggings.component';
@@ -11,15 +12,18 @@ import { RegisterComponent } from './components/register/register.component';
 
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'dresses', component: DressesComponent },
   { path: 'sets', component: SetsComponent },
   { path: 'shoes', component: ShoesComponent },
   { path: 'leggings', component: LeggingsComponent },
   { path: 'accessory', component: AccessoryComponent },
+  { path: 'cart', component: CartComponent },
 
+
+  
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
