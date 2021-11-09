@@ -19,7 +19,7 @@
                   <td>
                     <button class="btn btn-primary btn-sm" (click)="increamentQTY(item.id,1)">+</button>
                     {{ item.quantity }}
-                    <button class="btn btn-primary btn-sm">-</button>
+                    <button class="btn btn-primary btn-sm" (click)="decreaseQty(item.id,1)">-</button>
                   </td>
                   <td class="text-right">
                     <h5 class="font-medium m-b-30">{{ item.total }}</h5>

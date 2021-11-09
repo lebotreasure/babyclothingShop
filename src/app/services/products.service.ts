@@ -19,10 +19,13 @@ export class ProductsService {
     return this.http.get(`${environment.baseURL}/cart`);
   }
   increaseQty(payload:any) {
-    return this.http.patch(`${environment.baseURL}/cart/id`, payload);
+    return this.http.post(`${environment.baseURL}/cart`, payload);
   }
   emptyCart() {
-    return this.http.delete(`${environment.baseURL}/cart/id`);
+    return this.http.delete(`${environment.baseURL}/cart`);
+  }
+  decreaseQty(payload:any) {
+    return this.http.delete(`${environment.baseURL}/cart`, payload);
   }
 
 }

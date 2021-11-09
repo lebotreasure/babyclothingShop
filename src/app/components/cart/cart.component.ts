@@ -32,6 +32,16 @@ export class CartComponent implements OnInit {
     });
   }
 
+  decreaseQty(id: any, quantity: any): void {
+    const payload = {
+      productId: id,
+      quantity
+    };
+    this.productsService.decreaseQty(payload).subscribe(() => {
+      alert('Product removed');
+    })
+  }
+
   emptyCart(): void {
     this.productsService.emptyCart().subscribe(() => {
       this.getCart();
